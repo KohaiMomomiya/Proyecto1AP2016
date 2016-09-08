@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_new_project"
+    tools:context=".NewProjectActivity">
+
+    <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/new_project_viewflipper"
+            >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view5">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_project_name"
+                        android:hint="@string/project_name"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_alignParentEnd="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Sprint duration (in days):"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        />
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:inputType="number"
+                        android:text="4"
+                        android:ems="2"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/newProject_sprintDuration"
+                        android:layout_weight="0.15"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView"
+                    android:isScrollContainer="false"
+                    android:layout_weight="0.6"
+                    >
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view6">
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:hint="@string/description"
+                            android:ems="10"
+                            android:id="@+id/new_project_description"
+                            android:layout_below="@+id/view5"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignEnd="@+id/view5"
+                            android:maxLines="4"
+                            />
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Product Owner:"
+                    android:id="@+id/textView"
+                    />
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_project_product_owner_spinner"
+                    android:prompt="@string/product_owner_prompt"
+                    android:entries="@array/spinner_test"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Scrum Master:"
+                    android:id="@+id/textView3"
+                    android:prompt="@string/scrum_master_prompt"
+                    />
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_project_scrum_master_spinner"
+                    android:entries="@array/spinner_test"
+                    />
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:id="@+id/button"
+                    android:layout_gravity="right"
+                    android:onClick="nextButton"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select the Project&apos;s Developers:"
+                    android:id="@+id/textView2"/>
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:id="@+id/scrollView2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.16">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/new_project_developers_selection"
+                        >
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox2"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox3"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox4"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Select the Project&apos;s Testers:"
+                    android:id="@+id/textView4"/>
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/scrollView3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.16">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_project_testers_selector"
+                        >
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox5"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox6"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox7"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New CheckBox"
+                            android:id="@+id/checkBox8"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Previous"
+                        android:id="@+id/new_project_prev_button"
+                        android:onClick="prevButton"
+                        />
+
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Finish"
+                        android:id="@+id/new_project_finish_button"
+                        android:onClick="submitProject"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+
+
+</RelativeLayout>
