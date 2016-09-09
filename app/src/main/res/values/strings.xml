@@ -11,20 +11,20 @@
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_mismatch_password">Password does not match</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_project_manager">ProjectManager</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="title_activity_register_new_user">RegisterNewUser</string>
+    <string name="title_activity_nuevo_usuario">Register New User</string>
     <string name="prompt_name">Name</string>
     <string name="prompt_password_again">Re-enter Password</string>
     <string name="new_user_is_system_administrator">New User is System Administrator</string>
     <string name="register_user">Register User</string>
-    <string name="title_activity_new_project">NewProject</string>
+    <string name="title_activity_nuevo_proyecto">Register New Project</string>
     <string name="project_name">Project Name</string>
     <string name="description">Description</string>
 
@@ -40,8 +40,22 @@
     </string-array>
     <string name="title_activity_example">Example</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_new_task">New Task</string>
+    <string name="title_activity_nueva_tarea">New Task</string>
     <string name="task_name">Task Name</string>
     <string name="task_effort_prompt">Task Effort (in hours):</string>
+    <string name="title_activity_activity_nuevo_user_story">Nuevo User Story</string>
+    <string name="nombre_user_story">User Story Name</string>
+    <string name="user_story_priority_prompt">User Story priority level:</string>
+    <string name="user_story_priority_default">1</string>
+    <string name="user_story_points_prompt">User Story points:</string>
+    <string name="cancel">Cancel</string>
+    <string name="register_task">Register Task</string>
+    <string name="title_activity_activity_info_user_story">User Story Info</string>
+    <string name="title_activity_activity_info_sprint">Sprint Info</string>
+    <string name="title_activity_activity_info_releases">Release Info</string>
+    <string name="task_effort_default">4</string>
+    <string name="title_activity_activity_nuevo_sprint">ActivityNuevoSprint</string>
+    <string name="sprint_name">Sprint Name</string>
+    <string name="user_story_select_prompt">Choose the related User Stories:</string>
 
 </resources>

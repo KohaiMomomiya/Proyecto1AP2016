@@ -16,11 +16,11 @@ import java.net.URL;
  * Created by Esteban on 6/9/2016.
  */
 
-public class DbAccess extends AsyncTask<Void, Void, String> {
+public class AccesoWeb extends AsyncTask<Void, Void, String> {
   private String dbUrl;
   private Context context;
   
-  public DbAccess(Context context, String url){
+  public AccesoWeb(Context context, String url){
     this.context = context;
     this.dbUrl = dbUrl;
   }
@@ -50,10 +50,10 @@ public class DbAccess extends AsyncTask<Void, Void, String> {
       return stringBuilder.toString().trim();
       
     } catch (MalformedURLException e) {
-      Log.e("DbAccess", "MalformedURLException");
+      Log.e("AccesoWeb", "MalformedURLException");
       e.printStackTrace();
     } catch (IOException e) {
-      Log.e("DbAccess", "IOException");
+      Log.e("AccesoWeb", "IOException");
       e.printStackTrace();
     }
     

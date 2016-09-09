@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:id="@+id/newProject_activity_layout"
-    tools:context=".NewProjectActivity">
+    tools:context=".ActivityNuevoProyecto">
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
@@ -23,6 +23,16 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_new_project"/>
+    <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/new_project_viewflipper"
+            android:layout_marginTop="?attr/actionBarSize"
+            >
+
+        <include layout="@layout/content_nuevo_proyecto_1"/>
+        <include layout="@layout/content_nuevo_proyecto_2"/>
+    </ViewFlipper>
+
 
 </android.support.design.widget.CoordinatorLayout>

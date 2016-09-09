@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.ViewFlipper;
 
-public class NewProjectActivity extends AppCompatActivity{
+public class ActivityNuevoProyecto extends AppCompatActivity{
   
   int sprintDuration;
   
@@ -30,11 +30,10 @@ public class NewProjectActivity extends AppCompatActivity{
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_new_project);
+    setContentView(R.layout.activity_nuevo_proyecto);
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.new_project_toolbar);
     setSupportActionBar(toolbar);
-    getSupportActionBar().setTitle("New Project");
     
     sprintDuration = 4;
     

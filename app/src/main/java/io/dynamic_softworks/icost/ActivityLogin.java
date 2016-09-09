@@ -38,7 +38,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+public class ActivityLogin extends AppCompatActivity implements LoaderCallbacks<Cursor> {
   
   /**
    * Id to identity READ_CONTACTS permission request.
@@ -285,7 +285,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
   private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
     //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
     ArrayAdapter<String> adapter =
-        new ArrayAdapter<>(LoginActivity.this,
+        new ArrayAdapter<>(ActivityLogin.this,
             android.R.layout.simple_dropdown_item_1line, emailAddressCollection);
     
     mEmailView.setAdapter(adapter);
@@ -335,9 +335,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
       showProgress(false);
       
       if (success) {
-        Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_LONG).show();
+        Toast.makeText(ActivityLogin.this, "Login successful!", Toast.LENGTH_LONG).show();
         
-        Intent intent = new Intent(LoginActivity.this, RegisterNewUser.class);
+        Intent intent = new Intent(ActivityLogin.this, ActivityNuevoUsuario.class);
         startActivity(intent);
         
         
