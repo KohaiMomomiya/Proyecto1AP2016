@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ICOST Project Manager</string>
+    <string name="app_name" translatable="false">ICOST Project Manager</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Sign in</string>
 
@@ -17,8 +17,8 @@
         completions."
     </string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
     <string name="title_activity_nuevo_usuario">Register New User</string>
     <string name="prompt_name">Name</string>
     <string name="prompt_password_again">Re-enter Password</string>
@@ -38,24 +38,74 @@
         <item>Item 4</item>
         <item>Item 5</item>
     </string-array>
+
     <string name="title_activity_example">Example</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
     <string name="title_activity_nueva_tarea">New Task</string>
     <string name="task_name">Task Name</string>
     <string name="task_effort_prompt">Task Effort (in hours):</string>
-    <string name="title_activity_activity_nuevo_user_story">Nuevo User Story</string>
+    <string name="title_activity_activity_nuevo_user_story">New User Story</string>
     <string name="nombre_user_story">User Story Name</string>
     <string name="user_story_priority_prompt">User Story priority level:</string>
-    <string name="user_story_priority_default">1</string>
+    <string name="user_story_priority_default" translatable="false">1</string>
     <string name="user_story_points_prompt">User Story points:</string>
     <string name="cancel">Cancel</string>
     <string name="register_task">Register Task</string>
     <string name="title_activity_activity_info_user_story">User Story Info</string>
     <string name="title_activity_activity_info_sprint">Sprint Info</string>
     <string name="title_activity_activity_info_releases">Release Info</string>
-    <string name="task_effort_default">4</string>
-    <string name="title_activity_activity_nuevo_sprint">ActivityNuevoSprint</string>
+    <string name="task_effort_default" translatable="false">4</string>
+    <string name="title_activity_activity_nuevo_sprint">New Sprint</string>
     <string name="sprint_name">Sprint Name</string>
     <string name="user_story_select_prompt">Choose the related User Stories:</string>
+    <string name="title_activity_activtiy_user_stories_proyecto">Project\'s User Stories
+    </string>
+    <string name="title_activity_activity_usuarios_proyecto">Project\'s Team</string>
+    <string name="title_activity_activity_info_proyecto">Project Information</string>
+    <string name="project_name_label">Project Name:</string>
+    <string name="sprint_duration_label">Sprint Duration (in days):</string>
+    <string name="view_project_releases">View Project Releases</string>
+    <string name="view_project_user_stories">View Project User Stories</string>
+    <string name="view_project_team">View Project Team</string>
+    <string name="number_placeholder" translatable="false">0000</string>
+    <string name="project_name_placeholder" translatable="false">[NOMBRE DEL PROYECTO]</string>
+    <string name="sprint_name_placeholder" translatable="false">[NOMBRE DEL SPRINT]</string>
+    <string name="sprint_list_label">Sprint List:</string>
+    <string name="release_name_placeholder" translatable="false">[NOMBRE DEL RELEASE]</string>
+    <string name="release_name_label">Release name:</string>
+    <string name="incoming_user_stories_label">Incoming User Stories:</string>
+    <string name="user_story_name_placeholder" translatable="false">[NOMBRE DE USER STORY]</string>
+    <string name="edit_user_stories">Edit User Stories</string>
+    <string name="task_name_placeholder" translatable="false">[NOMBRE DE TAREA]</string>
+    <string name="task_hours_placeholder" translatable="false">0000 Hrs</string>
+    <string name="add_task">Add Task</string>
+    <string name="user_story_name_label">User Story Name:</string>
+    <string name="priority_label">Priority:</string>
+    <string name="score_label">Score:</string>
+    <string name="tasks_label">Tasks:</string>
+    <string name="sprint_duration_default" translatable="false">4</string>
+    <string name="product_owner_label" translatable="false">Product Owner:</string>
+    <string name="scrum_master_label" translatable="false">Scrum Master:</string>
+    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+    <string name="select_the_project_testers_label">Select the Project\'s Testers:</string>
+    <string name="select_the_project_developers_label">Select the Project\'s Developers:</string>
+    <string name="next">Next</string>
+    <string name="user_name_placeholder" translatable="false">[NOMBRE DEL USUARIO]</string>
+    <string name="register_sprint">Register Sprint</string>
+    <string name="title_activity_activity_lista_usuarios">Users List</string>
+    <string name="list_of_users_label">List of Users:</string>
+    <string name="add_new_user">Add New User</string>
+    <string name="register_user_story">Register User Story</string>
+    <string name="add_new_sprint">Add New Sprint</string>
+    <string name="outgoing_user_stories_label">Outgoing User Stories:</string>
+    <string name="developers_label" translatable="false">Developers:</string>
+    <string name="add_user_story">Add User Story</string>
+    <string name="title_activity_activity_lista_releases_proyecto">Project\'s Release List</string>
+    <string name="add_new_release">Add New Release</string>
+    <string name="title_activity_activity_nuevo_release">New Release</string>
+    <string name="submitting_new_project">Registering new project...</string>
+    <string name="register_proyecto">Register Project</string>
+    <string name="submitting_new_task">Registering new task...</string>
 
 </resources>

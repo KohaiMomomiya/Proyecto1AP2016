@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="io.dynamic_softworks.icost.ActivityInfoReleases">
+        tools:context="io.dynamic_softworks.icost.ActivityListaReleasesProyecto">
 
     <android.support.design.widget.AppBarLayout
             android:layout_height="wrap_content"
@@ -22,6 +22,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_info_releases"/>
+    <include layout="@layout/content_lista_releases_proyecto"/>
 
 </android.support.design.widget.CoordinatorLayout>

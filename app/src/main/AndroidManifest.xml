@@ -58,7 +58,7 @@
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".ActivityInfoReleases"
+                android:name=".ActivityInfoRelease"
                 android:label="@string/title_activity_activity_info_releases"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
@@ -66,6 +66,40 @@
                 android:name=".ActivityNuevoSprint"
                 android:label="@string/title_activity_activity_nuevo_sprint"
                 android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivtiyListaUserStoriesProyecto"
+                android:label="@string/title_activity_activtiy_user_stories_proyecto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityListaUsuariosProyecto"
+                android:label="@string/title_activity_activity_usuarios_proyecto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityInfoProyecto"
+                android:label="@string/title_activity_activity_info_proyecto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityListaUsuarios"
+                android:label="@string/title_activity_activity_lista_usuarios"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityListaReleasesProyecto"
+                android:label="@string/title_activity_activity_lista_releases_proyecto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityNuevoRelease"
+                android:label="@string/title_activity_activity_nuevo_release"
+                android:parentActivityName=".ActivityInfoProyecto"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoProyecto"/>
         </activity>
     </application>
 

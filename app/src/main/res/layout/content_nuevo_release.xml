@@ -11,44 +11,17 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_nueva_tarea"
-        tools:context=".ActivityNuevaTarea">
+        tools:showIn="@layout/activity_nuevo_release"
+        tools:context="io.dynamic_softworks.icost.ActivityNuevoRelease">
 
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/nombre_nueva_tarea"
-            android:hint="@string/task_name"
+            android:id="@+id/nombre_nuevo_release"
+            android:hint="@string/release_name"
             android:maxLines="1"
             android:singleLine="true"
             />
-
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout">
-
-        <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/task_effort_prompt"
-                android:singleLine="true"
-                android:maxLines="1"/>
-
-        <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:inputType="number"
-                android:text="@string/task_effort_default"
-                android:textAlignment="textEnd"
-                android:id="@+id/horas_esfuerzo_nueva_tarea"
-                />
-    </LinearLayout>
 
     <LinearLayout
             android:orientation="horizontal"
@@ -60,15 +33,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="@string/register_task"
-                android:id="@+id/boton_registrar_nueva_tarea"
-                />
+                android:text="@string/register_release"
+                android:id="@+id/button2"/>
 
         <Space
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1"/>
 
         <Button
                 android:layout_width="wrap_content"
@@ -76,7 +47,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="@string/cancel"
-                android:id="@+id/boton_cancelar_nueva_tarea"
-                />
+                android:id="@+id/button3"/>
     </LinearLayout>
+
 </LinearLayout>

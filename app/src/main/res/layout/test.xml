@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Previous"
-                android:id="@+id/new_project_prev_button"/>
+                android:id="@+id/nuevo_proyecto_boton_atras"/>
 
         <Space
                 android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Finish"
-                android:id="@+id/new_project_finish_button"
+                android:id="@+id/nuevo_proyecto_boton_finalizar"
                 />
     </LinearLayout>
 

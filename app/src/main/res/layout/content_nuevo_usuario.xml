@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -22,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="@string/prompt_name"
-                android:id="@+id/new_user_name"
+                android:id="@+id/nombre_nuevo_usuario"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentStart="true"
@@ -34,8 +35,6 @@
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/view"
-            android:layout_alignParentStart="true"
             android:id="@+id/view2">
         <EditText
                 android:layout_width="match_parent"
@@ -43,17 +42,13 @@
                 android:inputType="textEmailAddress"
                 android:hint="@string/prompt_email"
                 android:ems="10"
-                android:id="@+id/new_user_email"
-                android:layout_below="@+id/new_user_name"
-                android:layout_alignParentStart="true"
-                android:layout_alignEnd="@+id/new_user_name"/>
+                android:id="@+id/email_nuevo_usuario"
+                />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/view2"
-            android:layout_alignParentEnd="true"
             android:id="@+id/view3">
         <EditText
                 android:layout_width="match_parent"
@@ -62,17 +57,12 @@
                 android:hint="@string/prompt_password"
                 android:fontFamily="sans-serif"
                 android:ems="10"
-                android:id="@+id/new_user_password"
-                android:layout_below="@+id/new_user_email"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"/>
+                android:id="@+id/password_nuevo_usuario"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/view3"
-            android:layout_alignParentStart="true"
             android:id="@+id/view4">
         <EditText
                 android:layout_width="match_parent"
@@ -81,10 +71,7 @@
                 android:hint="@string/prompt_password_again"
                 android:fontFamily="sans-serif"
                 android:ems="10"
-                android:id="@+id/new_user_password2"
-                android:layout_below="@+id/new_user_password"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"/>
+                android:id="@+id/password2_nuevo_usuario"/>
     </android.support.design.widget.TextInputLayout>
 
     <CheckBox
@@ -92,25 +79,36 @@
             android:layout_height="wrap_content"
             android:text="@string/new_user_is_system_administrator"
             android:id="@+id/checkbox_user_sysdamin"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true"/>
+            />
 
-    <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/space"
-            android:layout_below="@+id/checkbox_user_sysdamin"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/button_register_new_user"/>
-
-    <Button
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_user"
-            android:id="@+id/button_register_new_user"
-            android:layout_below="@+id/space"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true"/>
+            >
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/register_user"
+                android:id="@+id/boton_registrar_nuevo_usuario"
+                />
+
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:id="@+id/boton_cancelar"/>
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -15,16 +16,19 @@ import android.widget.ViewFlipper;
 
 public class ActivityNuevoProyecto extends AppCompatActivity{
   
-  int sprintDuration;
+  private int sprintDuration;
   
-  ViewFlipper viewFlipper;
-  EditText etSprintDuration;
+  private ViewFlipper viewFlipper;
   
-  Spinner productOwnerSpinner;
-  Spinner scrumMasterSpinner;
+  private EditText etNombreProyecto;
+  private EditText etDuracionSprint;
+  private EditText etDescripcion;
   
-  LinearLayout developersSelection;
-  LinearLayout testersSelection;
+  private Spinner spinnerProductOwner;
+  private Spinner spinnerScrumMaster;
+  
+  private LinearLayout layoutSeleccionDevelopers;
+  private LinearLayout layoutSeleccionTesters;
   
   
   @Override
@@ -34,11 +38,60 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.new_project_toolbar);
     setSupportActionBar(toolbar);
+  
+    viewFlipper = (ViewFlipper) findViewById(R.id.new_project_viewflipper);
+    
+    etNombreProyecto = (EditText) findViewById(R.id.nombre_nuevo_proyecto);
+    etNombreProyecto = (EditText) findViewById(R.id.descripcion_nuevo_proyecto);
+    etDuracionSprint = (EditText) findViewById(R.id.duracion_sprint_nuevo_proyecto);
     
     sprintDuration = 4;
     
-    etSprintDuration = (EditText) findViewById(R.id.newProject_sprintDuration);
-    viewFlipper = (ViewFlipper) findViewById(R.id.new_project_viewflipper);
+    spinnerProductOwner = (Spinner) findViewById(R.id.new_project_product_owner_spinner);
+    spinnerScrumMaster = (Spinner) findViewById(R.id.new_project_scrum_master_spinner);
+    
+    layoutSeleccionDevelopers = (LinearLayout) findViewById(R.id.new_project_developers_selection);
+    layoutSeleccionTesters = (LinearLayout) findViewById(R.id.new_project_testers_selector);
+    
+    Button botonRegistrarNuevoProyecto = (Button) findViewById(R.id.boton_registrar_nuevo_proyecto);
+    if (botonRegistrarNuevoProyecto != null){
+      botonRegistrarNuevoProyecto.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          registrar();
+        }
+      });
+    }
+    
+    Button botonCancelarNuevoProyecto = (Button) findViewById(R.id.boton_cancelar_nuevo_proyecto);
+    if (botonCancelarNuevoProyecto != null){
+      botonCancelarNuevoProyecto.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          cancelar();
+        }
+      });
+    }
+    
+    Button botonAtrasProyecto = (Button) findViewById(R.id.boton_atras_nuevo_proyecto);
+    if (botonAtrasProyecto != null){
+      botonAtrasProyecto.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          irHaciaPantallaAnterior();
+        }
+      });
+    }
+    
+    Button botonAdelanteProyecto = (Button) findViewById(R.id.boton_adelante_nuevo_proyecto);
+    if (botonAdelanteProyecto != null){
+      botonAdelanteProyecto.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          irHaciaProximaPantalla();
+        }
+      });
+    }
   }
   
   
@@ -46,15 +99,13 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
   public void onBackPressed(){
     int currentStep = viewFlipper.getDisplayedChild();
     if (currentStep > 0){
-      previousStep();
+      irHaciaPantallaAnterior();
     } else {
-      super.onBackPressed();
+      finish();
     }
   }
   
-
-  
-  private void previousStep(){
+  private void irHaciaPantallaAnterior(){
     View view = this.getCurrentFocus();
     if (view != null) {
       InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -69,14 +120,14 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
     }
   }
   
-  private void nextStep(){
+  private void irHaciaProximaPantalla() {
     View view = this.getCurrentFocus();
     if (view != null) {
-      InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+      InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
       imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
-    
-    
+  
+  
     if (viewFlipper.getDisplayedChild() <= viewFlipper.getChildCount() - 1) {
       viewFlipper.setInAnimation(this, R.anim.slide_in_from_right);
       viewFlipper.setOutAnimation(this, R.anim.slide_out_to_left);
@@ -84,20 +135,16 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
     }
   }
   
-  
-  public void nextButton(View view){
-    nextStep();
-  }
-  
-  public void prevButton(View view){
-    previousStep();
-  }
-  
-  public void submitProject(View view){
+  private void registrar(){
+    // TODO Validación datos.
     CoordinatorLayout layout = (CoordinatorLayout) findViewById(R.id.newProject_activity_layout);
     if (layout != null){
-      Snackbar.make(layout, "Submitting new project...",
+      Snackbar.make(layout, R.string.submitting_new_project,
           Snackbar.LENGTH_SHORT).show();
     }
+  }
+  
+  private void cancelar(){
+    finish();
   }
 }
