@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:weightSum="1"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -14,158 +15,144 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="vertical"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-            >
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/select_the_project_developers_label"
-                android:id="@+id/textView2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/select_the_project_developers_label"
+            android:id="@+id/textView27"/>
 
-        <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.15">
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/new_project_developers_selection"
-                    >
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox17"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox18"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox22"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox23"/>
-
-            </LinearLayout>
-        </ScrollView>
-
-        <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                />
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/select_the_project_testers_label"
-                android:id="@+id/textView4"/>
-
-        <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.15">
-
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/new_project_testers_selector"
-                    >
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox19"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox20"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox21"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox24"/>
-
-                <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/user_name_placeholder"
-                        android:id="@+id/checkBox25"/>
-            </LinearLayout>
-        </ScrollView>
-
-        <Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.25"
-                android:layout_gravity="center_horizontal"
-                />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:id="@+id/scrollView10">
 
         <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:id="@+id/layout_nuevo_proyecto_lista_developers">
 
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/previous"
-                    android:id="@+id/boton_atras_nuevo_proyecto"
-                    android:onClick="irAtras"
-                    />
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox19"/>
 
-            <Space
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox20"/>
 
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/register_proyecto"
-                    android:id="@+id/boton_registrar_nuevo_proyecto"
-                    android:onClick="registrar"
-                    />
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox21"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox24"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox25"/>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/select_the_project_testers_label"
+            android:id="@+id/textView39"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:id="@+id/scrollView11">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_nuevo_proyecto_lista_testers">
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox17"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox18"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox22"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox23"/>
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name_placeholder"
+                    android:id="@+id/checkBox26"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/previous"
+                android:id="@+id/nuevo_proyecto_boton_atras"
+                />
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/register_proyecto"
+                android:id="@+id/boton_registrar_nuevo_proyecto"
+                />
+    </LinearLayout>
+
 </LinearLayout>

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -18,7 +19,7 @@
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/view5">
+            >
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,7 +78,7 @@
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/new_project_product_owner_spinner"
+            android:id="@+id/nuevo_proyecto_spinner_product_owner"
             android:prompt="@string/product_owner_prompt"
             android:entries="@array/spinner_test"
             />
@@ -93,24 +94,24 @@
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/new_project_scrum_master_spinner"
+            android:id="@+id/nuevo_proyecto_spinner_scrum_master"
             android:entries="@array/spinner_test"
             />
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:id="@+id/scrollView"
             android:isScrollContainer="false"
-            android:layout_weight="0.90"
+            android:layout_weight="0.8"
             >
         <android.support.design.widget.TextInputLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/view6">
             <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:inputType="textMultiLine"
                     android:hint="@string/description"
                     android:ems="10"
@@ -145,8 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next"
-            android:id="@+id/boton_adelante_nuevo_proyecto"
-            android:onClick="irAdelante"
+            android:id="@+id/nuevo_proyecto_boton_siguiente"
             android:layout_weight="1"
             />
     </LinearLayout>

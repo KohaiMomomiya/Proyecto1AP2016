@@ -1,4 +1,4 @@
-package io.dynamic_softworks.icost;
+package io.dynamic_softworks.icost.conectividad;
 
 import android.content.Context;
 import android.os.AsyncTask;

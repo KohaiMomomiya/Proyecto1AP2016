@@ -47,11 +47,12 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
     
     sprintDuration = 4;
     
-    spinnerProductOwner = (Spinner) findViewById(R.id.new_project_product_owner_spinner);
-    spinnerScrumMaster = (Spinner) findViewById(R.id.new_project_scrum_master_spinner);
+    spinnerProductOwner = (Spinner) findViewById(R.id.nuevo_proyecto_spinner_product_owner);
+    spinnerScrumMaster = (Spinner) findViewById(R.id.nuevo_proyecto_spinner_scrum_master);
     
-    layoutSeleccionDevelopers = (LinearLayout) findViewById(R.id.new_project_developers_selection);
-    layoutSeleccionTesters = (LinearLayout) findViewById(R.id.new_project_testers_selector);
+    layoutSeleccionDevelopers =
+        (LinearLayout) findViewById(R.id.layout_nuevo_proyecto_lista_developers);
+    layoutSeleccionTesters = (LinearLayout) findViewById(R.id.layout_nuevo_proyecto_lista_testers);
     
     Button botonRegistrarNuevoProyecto = (Button) findViewById(R.id.boton_registrar_nuevo_proyecto);
     if (botonRegistrarNuevoProyecto != null){
@@ -73,7 +74,7 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
       });
     }
     
-    Button botonAtrasProyecto = (Button) findViewById(R.id.boton_atras_nuevo_proyecto);
+    Button botonAtrasProyecto = (Button) findViewById(R.id.nuevo_proyecto_boton_atras);
     if (botonAtrasProyecto != null){
       botonAtrasProyecto.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -83,7 +84,7 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
       });
     }
     
-    Button botonAdelanteProyecto = (Button) findViewById(R.id.boton_adelante_nuevo_proyecto);
+    Button botonAdelanteProyecto = (Button) findViewById(R.id.nuevo_proyecto_boton_siguiente);
     if (botonAdelanteProyecto != null){
       botonAdelanteProyecto.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -137,10 +138,9 @@ public class ActivityNuevoProyecto extends AppCompatActivity{
   
   private void registrar(){
     // TODO Validación datos.
-    CoordinatorLayout layout = (CoordinatorLayout) findViewById(R.id.newProject_activity_layout);
+    CoordinatorLayout layout = (CoordinatorLayout) findViewById(R.id.nuevo_proyecto_activity_layout);
     if (layout != null){
-      Snackbar.make(layout, R.string.submitting_new_project,
-          Snackbar.LENGTH_SHORT).show();
+      Snackbar.make(layout, R.string.submitting_new_project, Snackbar.LENGTH_SHORT).show();
     }
   }
   

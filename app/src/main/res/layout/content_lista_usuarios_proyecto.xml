@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Product Owner:"
+                android:text="@string/product_owner_label"
                 android:id="@+id/textView57"/>
 
         <TextView
@@ -32,13 +32,13 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/user_name_placeholder"
-                android:id="@+id/textView58"/>
+                android:id="@+id/product_owner_proyecto"/>
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Scrum Master:"
+                android:text="@string/scrum_master_label"
                 android:id="@+id/textView59"/>
 
         <TextView
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/user_name_placeholder"
-                android:id="@+id/textView48"/>
+                android:id="@+id/scrum_master_proyecto"/>
 
     </LinearLayout>
 
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.10"/>
+            android:layout_weight="0.03"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -65,15 +65,16 @@
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView10"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
             >
-
 
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/lista_developers_proyecto"
+                >
 
             <TextView
                     android:layout_width="match_parent"
@@ -122,29 +123,29 @@
 
     <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.10"/>
+            android:layout_weight="0.03"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Testers:"
+            android:text="@string/testers_label"
             android:id="@+id/textView62"/>
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView11"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
             >
-
 
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:id="@+id/lista_testers_proyecto"
+                >
 
             <TextView
                     android:layout_width="match_parent"

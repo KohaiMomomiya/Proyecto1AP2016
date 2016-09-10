@@ -16,29 +16,25 @@
         tools:context="io.dynamic_softworks.icost.ActivityInfoUserStory">
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/user_story_name_label"
             android:id="@+id/textView5"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"/>
+            />
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/user_story_name_placeholder"
-            android:id="@+id/textView6"
-            android:layout_below="@+id/textView5"
-            android:layout_alignParentStart="true"/>
+            android:id="@+id/info_user_story_nombre"
+            />
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView6"
             android:id="@+id/linearLayout3">
 
         <TextView
@@ -67,8 +63,6 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayout3"
-            android:layout_alignParentStart="true"
             android:id="@+id/linearLayout4">
 
         <TextView
@@ -76,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/number_placeholder"
-                android:id="@+id/textView8"/>
+                android:id="@+id/info_user_story_prioridad"/>
 
         <Space
                 android:layout_width="0dp"
@@ -89,257 +83,34 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/number_placeholder"
-                android:id="@+id/textView10"/>
+                android:id="@+id/info_user_story_puntuacion"/>
     </LinearLayout>
 
-    <LinearLayout
-            android:orientation="vertical"
+
+    <Space
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/linearLayout4"
-            android:layout_alignParentStart="true"
-            android:weightSum="1">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"/>
 
-        <Space
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/tasks_label"
+            android:id="@+id/textView11"
+            />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView4"
+            android:layout_weight="0.8">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/info_user_story_lista_tareas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"/>
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/tasks_label"
-                android:id="@+id/textView11"
-                />
-
-        <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/scrollView4"
-                android:layout_weight="0.3">
-
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView14"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView15"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView12"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                />
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView13"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView16"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView17"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView18"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView19"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView20"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView21"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView79"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView80"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView81"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView82"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal">
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:text="@string/task_name_placeholder"
-                                android:id="@+id/textView83"/>
-
-                        <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"/>
-
-                        <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="start"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="@string/task_hours_placeholder"
-                                android:id="@+id/textView84"/>
-                    </LinearLayout>
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                         android:orientation="horizontal"
@@ -352,7 +123,7 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:text="@string/task_name_placeholder"
-                            android:id="@+id/textView37"/>
+                            android:id="@+id/textView14"/>
 
                     <Space
                             android:layout_width="wrap_content"
@@ -365,16 +136,234 @@
                             android:layout_gravity="start"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/task_hours_placeholder"
-                            android:id="@+id/textView86"/>
+                            android:id="@+id/textView15"/>
                 </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView12"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView13"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView16"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView17"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView18"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView19"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView20"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView21"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView79"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView80"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView81"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView82"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/task_name_placeholder"
+                            android:id="@+id/textView83"/>
+
+                    <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/task_hours_placeholder"
+                            android:id="@+id/textView84"/>
+                </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/task_name_placeholder"
+                        android:id="@+id/textView37"/>
+
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/task_hours_placeholder"
+                        android:id="@+id/textView86"/>
             </LinearLayout>
-        </ScrollView>
-        <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/add_task"
-                android:id="@+id/info_userstory_boton_nueva_tarea"
-                android:layout_gravity="end"/>
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_task"
+            android:id="@+id/info_user_story_boton_agregar_tarea"
+            />
 
 </LinearLayout>

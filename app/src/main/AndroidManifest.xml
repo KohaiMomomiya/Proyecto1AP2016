@@ -30,67 +30,119 @@
         <activity
                 android:name=".ActivityNuevoUsuario"
                 android:label="@string/title_activity_nuevo_usuario"
+                android:parentActivityName=".ActivityListaUsuarios"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaUsuarios"/>
         </activity>
         <activity
                 android:name=".ActivityNuevoProyecto"
                 android:label="@string/title_activity_nuevo_proyecto"
+                android:parentActivityName=".ActivityListaProyectosUsuario"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaProyectosUsuario"/>
         </activity>
         <activity
                 android:name=".ActivityNuevaTarea"
                 android:label="@string/title_activity_nueva_tarea"
+                android:parentActivityName=".ActivityInfoUserStory"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoUserStory"/>
         </activity>
         <activity
                 android:name=".ActivityNuevoUserStory"
                 android:label="@string/title_activity_activity_nuevo_user_story"
+                android:parentActivityName=".ActivityListaUserStoriesProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaUserStoriesProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityInfoUserStory"
                 android:label="@string/title_activity_activity_info_user_story"
+                android:parentActivityName=".ActivityListaUserStoriesProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaUserStoriesProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityInfoSprint"
                 android:label="@string/title_activity_activity_info_sprint"
+                android:parentActivityName=".ActivityInfoRelease"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoRelease"/>
         </activity>
         <activity
                 android:name=".ActivityInfoRelease"
                 android:label="@string/title_activity_activity_info_releases"
+                android:parentActivityName=".ActivityListaReleasesProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaReleasesProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityNuevoSprint"
                 android:label="@string/title_activity_activity_nuevo_sprint"
+                android:parentActivityName=".ActivityListaReleasesProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaReleasesProyecto"/>
         </activity>
         <activity
-                android:name=".ActivtiyListaUserStoriesProyecto"
+                android:name=".ActivityListaUserStoriesProyecto"
                 android:label="@string/title_activity_activtiy_user_stories_proyecto"
+                android:parentActivityName=".ActivityInfoProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityListaUsuariosProyecto"
                 android:label="@string/title_activity_activity_usuarios_proyecto"
+                android:parentActivityName=".ActivityInfoProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityInfoProyecto"
                 android:label="@string/title_activity_activity_info_proyecto"
+                android:parentActivityName=".ActivityListaProyectosUsuario"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityListaProyectosUsuario"/>
         </activity>
         <activity
                 android:name=".ActivityListaUsuarios"
                 android:label="@string/title_activity_activity_lista_usuarios"
+                android:parentActivityName=".ActivityMenuPrincipal"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityMenuPrincipal"/>
         </activity>
         <activity
                 android:name=".ActivityListaReleasesProyecto"
                 android:label="@string/title_activity_activity_lista_releases_proyecto"
+                android:parentActivityName=".ActivityInfoProyecto"
                 android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoProyecto"/>
         </activity>
         <activity
                 android:name=".ActivityNuevoRelease"
@@ -100,6 +152,33 @@
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="io.dynamic_softworks.icost.ActivityInfoProyecto"/>
+        </activity>
+        <activity
+                android:name=".ActivityCambiarUserStoriesSprint"
+                android:label="@string/title_activity_activity_cambiar_user_stories_sprint"
+                android:parentActivityName=".ActivityInfoSprint"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityInfoSprint"/>
+        </activity>
+        <activity
+                android:name=".ActivityListaProyectosUsuario"
+                android:label="@string/title_activity_activity_lista_proyectos_usuario"
+                android:parentActivityName=".ActivityMenuPrincipal"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityMenuPrincipal"/>
+        </activity>
+        <activity
+                android:name=".ActivityMenuPrincipal"
+                android:label="@string/title_activity_activity_menu_principal"
+                android:parentActivityName=".ActivityLogin"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="io.dynamic_softworks.icost.ActivityLogin"/>
         </activity>
     </application>
 

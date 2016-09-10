@@ -8,26 +8,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class ActivityListaReleasesProyecto extends AppCompatActivity {
+public class ActivityListaUserStoriesProyecto extends AppCompatActivity {
   
-  private LinearLayout listaReleases;
-  
+  private LinearLayout listaUserStories;
   
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_lista_releases_proyecto);
+    setContentView(R.layout.activity_lista_user_stories_proyecto);
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     
-    listaReleases = (LinearLayout) findViewById(R.id.layout_lista_releases_proyecto);
     
-    Button botonAgregarRelease = (Button) findViewById(R.id.boton_agregar_nuevo_release);
-    if (botonAgregarRelease != null){
-      botonAgregarRelease.setOnClickListener(new View.OnClickListener() {
+    listaUserStories = (LinearLayout) findViewById(R.id.layout_lista_user_stories);
+  
+    Button botonAgregarUserStory = (Button) findViewById(R.id.boton_agregar_userstory);
+    if (botonAgregarUserStory != null){
+      botonAgregarUserStory.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-          agregarNuevoRelease();
+          agregarNuevoUserStory();
         }
       });
     }
@@ -35,8 +35,8 @@ public class ActivityListaReleasesProyecto extends AppCompatActivity {
   }
   
   
-  private void agregarNuevoRelease(){
-    Intent intent = new Intent(this, ActivityNuevoRelease.class);
+  private void agregarNuevoUserStory(){
+    Intent intent = new Intent(this, ActivityNuevoUserStory.class);
     startActivity(intent);
   }
 }

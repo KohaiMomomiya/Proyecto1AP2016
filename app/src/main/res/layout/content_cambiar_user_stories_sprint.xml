@@ -6,30 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:weightSum="1"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_nuevo_sprint"
-        tools:context="io.dynamic_softworks.icost.ActivityNuevoSprint"
-        android:weightSum="1">
-
-    <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/view5">
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/nombre_nuevo_sprint"
-                android:hint="@string/sprint_name"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:layout_alignParentEnd="true"/>
-    </android.support.design.widget.TextInputLayout>
+        tools:showIn="@layout/activity_cambiar_user_stories_sprint"
+        tools:context="io.dynamic_softworks.icost.ActivityCambiarUserStoriesSprint">
 
     <TextView
             android:layout_width="wrap_content"
@@ -47,7 +31,7 @@
 
         <LinearLayout
                 android:orientation="vertical"
-                android:id="@+id/nuevo_sprint_lista_user_stories_entrantes"
+                android:id="@+id/cambio_sprint_lista_user_stories_entrantes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -94,7 +78,7 @@
 
         <LinearLayout
                 android:orientation="vertical"
-                android:id="@+id/nuevo_sprint_lista_user_stories_salientes"
+                android:id="@+id/cambio_sprint_lista_user_stories_salientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -134,8 +118,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="@string/register_sprint"
-                android:id="@+id/boton_registar_nuevo_sprint"/>
+                android:text="@string/update_sprint"
+                android:id="@+id/boton_actualizar_sprint"/>
 
         <Space
                 android:layout_width="wrap_content"
@@ -148,7 +132,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="@string/cancel"
-                android:id="@+id/boton_cancelar_nuevo_sprint"/>
+                android:id="@+id/boton_cancelar_cambios_sprint"/>
     </LinearLayout>
 
 </LinearLayout>

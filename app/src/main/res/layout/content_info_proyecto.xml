@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/project_name_placeholder"
-            android:id="@+id/textView74"/>
+            android:id="@+id/info_proyecto_nombre"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/number_placeholder"
-            android:id="@+id/textView76"/>
+            android:id="@+id/info_proyecto_duracion_sprint"/>
 
     <Space
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/view_project_user_stories"
-            android:id="@+id/info_proyecto_boton_ver_userstories"
+            android:id="@+id/info_proyecto_boton_ver_user_stories"
             />
 
     <Button

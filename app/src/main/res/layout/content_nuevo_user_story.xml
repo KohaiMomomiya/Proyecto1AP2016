@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="@string/register_user_story"
-                android:id="@+id/button6"/>
+                android:id="@+id/boton_registrar_nuevo_user_story"/>
 
         <Space
                 android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="@string/cancel"
-                android:id="@+id/button7"/>
+                android:id="@+id/boton_cancelar_nuevo_userstory"/>
     </LinearLayout>
 
 </LinearLayout>

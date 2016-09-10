@@ -14,14 +14,20 @@
         tools:showIn="@layout/activity_nueva_tarea"
         tools:context=".ActivityNuevaTarea">
 
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nombre_nueva_tarea"
-            android:hint="@string/task_name"
-            android:maxLines="1"
-            android:singleLine="true"
-            />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nombre_nueva_tarea"
+                android:hint="@string/task_name"
+                android:maxLines="1"
+                android:singleLine="true"
+                />
+    </android.support.design.widget.TextInputLayout>
+
 
     <LinearLayout
             android:orientation="horizontal"

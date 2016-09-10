@@ -73,7 +73,22 @@
     <string name="title_activity_activity_nuevo_release">Nuevo Release</string>
     <string name="register_release">Registrar Release</string>
     <string name="register_proyecto">Registrar Proyecto</string>
-    <string name="submitting_new_project">Registrando nuevo proyecto...</string>
-    <string name="submitting_new_task">Registrando nueva tarea...</string>
-    <string name="release_name">Nombre de Release</string>
+    <string name="submitting_new_project">Registrando nuevo proyecto…</string>
+    <string name="submitting_new_task">Registrando nueva tarea…</string>
+    <string name="release_name">Nombre del Release</string>
+    <string name="submitting_new_release">Registrando nuevo release…</string>
+    <string name="submitting_new_sprint">Registrando nuevo sprint…</string>
+    <string name="submitting_new_user_story">Registrando nuevo User Story…</string>
+    <string name="submitting_new_user">Registrando nuevo usuario…</string>
+    <string name="sprint_incoming_user_stories_prompt">Seleccione los User Stories Entrantes:</string>
+    <string name="sprint_outgoing_user_stories_prompt">Seleccione los User Stories Salientes:</string>
+    <string name="title_activity_activity_cambiar_user_stories_sprint">Cambiar User Stories de Sprint</string>
+    <string name="update_sprint">Actualizar Sprint</string>
+    <string name="updating_sprint_user_stories">Actualizando User Stories de Sprint…</string>
+    <string name="add_new_project">Agregar Nuevo Proyecto</string>
+    <string name="testers_label">Testers:</string>
+    <string name="title_activity_activity_lista_proyectos_usuario">Lista de Proyectos</string>
+    <string name="title_activity_activity_menu_principal">Menú Principal</string>
+    <string name="view_project_list">Ver Lista de Proyectos</string>
+    <string name="view_users_list">Ver Lista de Usuarios</string>
 </resources>

@@ -193,13 +193,11 @@ public class ActivityLogin extends AppCompatActivity implements LoaderCallbacks<
   }
   
   private boolean isEmailValid(String email) {
-    //TODO: Replace this with your own logic
-    return email.contains("@");
+   return Validaciones.validarEmail(email);
   }
   
   private boolean isPasswordValid(String password) {
-    //TODO: Replace this with your own logic
-    return password.length() > 4;
+    return Validaciones.validarPassword(password);
   }
   
   /**
@@ -335,9 +333,10 @@ public class ActivityLogin extends AppCompatActivity implements LoaderCallbacks<
       showProgress(false);
       
       if (success) {
+        // TODO Acciones a tomar si login fue exitoso.
         Toast.makeText(ActivityLogin.this, "Login successful!", Toast.LENGTH_LONG).show();
         
-        Intent intent = new Intent(ActivityLogin.this, ActivityNuevoUsuario.class);
+        Intent intent = new Intent(ActivityLogin.this, ActivityMenuPrincipal.class);
         startActivity(intent);
         
         

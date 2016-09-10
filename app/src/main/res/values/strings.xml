@@ -104,8 +104,23 @@
     <string name="title_activity_activity_lista_releases_proyecto">Project\'s Release List</string>
     <string name="add_new_release">Add New Release</string>
     <string name="title_activity_activity_nuevo_release">New Release</string>
-    <string name="submitting_new_project">Registering new project...</string>
+    <string name="submitting_new_project">Registering new project…</string>
     <string name="register_proyecto">Register Project</string>
-    <string name="submitting_new_task">Registering new task...</string>
+    <string name="submitting_new_task">Registering new task…</string>
+    <string name="submitting_new_release">Registering new release…</string>
+    <string name="submitting_new_sprint">Registering new sprint…</string>
+    <string name="submitting_new_user_story">Registering new User Story…</string>
+    <string name="submitting_new_user">Registering new user…</string>
+    <string name="sprint_incoming_user_stories_prompt">Select the Incoming User Stories:</string>
+    <string name="sprint_outgoing_user_stories_prompt">Select the Outgoing User Stories:</string>
+    <string name="title_activity_activity_cambiar_user_stories_sprint">Change Sprint\'s User Stories</string>
+    <string name="update_sprint">Update Sprint</string>
+    <string name="updating_sprint_user_stories">Updating Sprint\'s User Stories…</string>
+    <string name="testers_label">Testers:</string>
+    <string name="title_activity_activity_lista_proyectos_usuario">Project List</string>
+    <string name="add_new_project">Add New Project</string>
+    <string name="title_activity_activity_menu_principal">Main Menu</string>
+    <string name="view_users_list">View Users List</string>
+    <string name="view_project_list">View Project List</string>
 
 </resources>

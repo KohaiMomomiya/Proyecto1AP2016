@@ -23,11 +23,12 @@
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:id="@+id/scrollView12"
             android:layout_weight="1">
 
         <LinearLayout
+                android:id="@+id/layout_lista_usuarios"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -108,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/add_new_user"
-            android:id="@+id/lista_usuarios_boton_nueva_tarea"
+            android:id="@+id/lista_usuarios_boton_nuevo_usuario"
             />
 
     <Space

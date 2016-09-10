@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/new_user_is_system_administrator"
-            android:id="@+id/checkbox_user_sysdamin"
+            android:id="@+id/checkbox_nuevo_usuario_sysadmin"
             />
 
     <LinearLayout
@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="@string/cancel"
-                android:id="@+id/boton_cancelar"/>
+                android:id="@+id/boton_cancelar_nuevo_usuario"/>
     </LinearLayout>
 
 
