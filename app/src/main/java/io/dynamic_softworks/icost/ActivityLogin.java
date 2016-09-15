@@ -334,7 +334,7 @@ public class ActivityLogin extends AppCompatActivity implements LoaderCallbacks<
       
       if (success) {
         // TODO Acciones a tomar si login fue exitoso.
-        Toast.makeText(ActivityLogin.this, "Login successful!", Toast.LENGTH_LONG).show();
+        Toast.makeText(ActivityLogin.this, R.string.login_successful, Toast.LENGTH_LONG).show();
         
         Intent intent = new Intent(ActivityLogin.this, ActivityMenuPrincipal.class);
         startActivity(intent);

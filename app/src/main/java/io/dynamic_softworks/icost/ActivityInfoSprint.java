@@ -1,5 +1,6 @@
 package io.dynamic_softworks.icost;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -47,6 +48,7 @@ public class ActivityInfoSprint extends AppCompatActivity {
   
   
   private void editarSprintsAsociados(){
-    
+    Intent intent = new Intent(this, ActivityCambiarUserStoriesSprint.class);
+    startActivity(intent);
   }
 }

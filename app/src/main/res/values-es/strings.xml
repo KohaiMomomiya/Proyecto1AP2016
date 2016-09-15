@@ -30,7 +30,7 @@
     <string name="sprint_duration_label">Duración del Sprint (en días):</string>
     <string name="sprint_list_label">Lista de Sprints:</string>
     <string name="sprint_name">Nombre del Sprint</string>
-    <string name="task_effort_prompt">Esfuerzo de Tarea (en horas):</string>
+    <string name="task_effort_prompt">Esfuerzo de Tarea (horas):</string>
     <string name="task_name">Nombre de Tarea</string>
     <string name="title_activity_activity_info_proyecto">Información de Proyecto</string>
     <string name="title_activity_activity_info_releases">Información de Release</string>
@@ -50,7 +50,7 @@
     <string name="tasks_label">Tareas:</string>
     <string name="user_story_name_label">Nombre de User Story:</string>
     <string name="user_story_points_prompt">Puntos de User Story:</string>
-    <string name="user_story_priority_prompt">Nivel de prioridad de User Story:</string>
+    <string name="user_story_priority_prompt">Nivel de Prioridad:</string>
     <string name="user_story_select_prompt">Escoja los User Stories relacionados:</string>
     <string name="view_project_releases">Ver Releases del Proyecto</string>
     <string name="view_project_team">Ver Equipo del Proyecto</string>
@@ -69,7 +69,7 @@
     <string name="outgoing_user_stories_label">User Stories Salientes:</string>
     <string name="add_user_story">Agregar User Story</string>
     <string name="add_new_release">Agregar Nuevo Release</string>
-    <string name="title_activity_activity_lista_releases_proyecto">Lista de Releases del Proyecto</string>
+    <string name="title_activity_activity_lista_releases_proyecto">Releases de Proyecto</string>
     <string name="title_activity_activity_nuevo_release">Nuevo Release</string>
     <string name="register_release">Registrar Release</string>
     <string name="register_proyecto">Registrar Proyecto</string>
@@ -91,4 +91,5 @@
     <string name="title_activity_activity_menu_principal">Menú Principal</string>
     <string name="view_project_list">Ver Lista de Proyectos</string>
     <string name="view_users_list">Ver Lista de Usuarios</string>
+    <string name="login_successful">Se ha iniciado sesión exitosamente</string>
 </resources>
